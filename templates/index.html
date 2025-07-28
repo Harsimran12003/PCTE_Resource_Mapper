@@ -3,10 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Login</title>
+  <style>
+    body {
+      background: linear-gradient(114.57deg, rgba(255, 192, 219, 0.384) 0%, rgba(238, 37, 252, 0.3744) 100%);
+    }
+    #heading {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .login-box {
+      width: 300px;
+      height: 350px;
+      padding: 20px;
+      position: absolute;
+      float: left;
+      top: 90px;
+      left: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-label {
+      font-weight: bold;
+      display: block;
+      align-items: center;
+    }
+    .form-control {
+      width: 100%;
+      height: 25px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+    }
+    #login-button {
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 25px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="login-box">
+    <h2 id="heading">Login</h2>
+    <form action="" method="post">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <button id="login-button" value="Login" type="submit">Login</button>
   
 </body>
 </html>
