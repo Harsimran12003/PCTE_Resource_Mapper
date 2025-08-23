@@ -10,28 +10,50 @@ const Sidebar = () => {
       style={{
         width: isOpen ? "220px" : "70px",
         background: "rgba(255, 255, 255, 0.35)",
-        border: "4px solid #a259ff",
-        // borderImage: "linear-gradient(90deg, #a259ff, #ab69ceff, #FFFFFF) 1",
-        minHeight: "100vh",
+        border: "3px solid #a259ff",
+        borderImage: "linear-gradient(180deg, #7B0FFF, #F70DE4) 1",
+        minHeight: "40vh",
         display: "flex",
         flexDirection: "column",
         alignItems: isOpen ? "flex-start" : "center",
-        padding: "20px 10px",
+        padding: isOpen ? "23px 16px" : "23px 20px",
         boxSizing: "border-box",
         transition: "width 0.3s ease",
+        marginLeft: "25px",
+        marginTop: "15px",
+        marginBottom: "15px",
       }}
     >
-      {/* Hamburger */}
+      {/* Logo + Hamburger */}
       <div
         style={{
-          marginBottom: "30px",
-          fontSize: "1.8rem",
-          cursor: "pointer",
-          alignSelf: isOpen ? "flex-end" : "center",
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+          width: "100%",
+          justifyContent: isOpen ? "flex-end" : "center",
         }}
-        onClick={() => setIsOpen(!isOpen)}
       >
-        <FaBars />
+        <img
+          src="/image.png"
+          alt="Logo"
+          style={{
+            width: "1000px",
+            height: "40px",
+            marginRight: "10px",
+            borderRadius: "10px",
+            display: isOpen ? "block" : "none",
+          }}
+        />
+        <div
+          style={{
+            fontSize: "1.8rem",
+            cursor: "pointer",
+          }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FaBars />
+        </div>
       </div>
 
       {/* Menu */}
