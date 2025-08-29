@@ -4,12 +4,12 @@ const LoginText = () => {
       <img
         src="/image.png"
         alt="Login Banner"
-        className="mb-4 mt-18  h-24 "
+        className="mb-7 mt-25 h-24 rounded-4xl"
       />
       <h1 className="text-purple-700 text-center text-2xl font-semibold leading-snug">
         Know Every Room.
         <br />
-        Track Every Resource...
+        Track Every Resource.
       </h1>
     </div>
   );
